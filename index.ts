@@ -11,17 +11,21 @@ console.log("welcome to Number Guessing Game");
 
 // 3) compare user input with computer generated number and show result -do
 
-const randomNumber = Math.floor (Math.random()  * 6 + 1 );
+const randomNumber = Math.floor(Math.random() * 6 + 1);
+
 const answer = await inquirer.prompt([
     {
         name: "userGuessedNumber",
         type: "number",
-        message: "Please guess a number between 1-6:",
+        message: "Enter your guess number(Number Limt from 1 to 6):",
     },
 ]);
 
-if (answer.usersGuessedNumber){
-    console.log("Congratulation! you guessed right number");
-} else {
-    console.log("You guessed wrong number");
+if (answer.userGuessedNumber === randomNumber){
+    console.log("congratulation ! You guess a correct number.");
+    
+} 
+else {
+ console.log("Sorry, you guess a wrong number");
+    
 }

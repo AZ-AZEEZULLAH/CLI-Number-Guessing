@@ -1,6 +1,6 @@
 {
-  "name": "a786z-cli-simple-number-guessing-game",
-  "version": "1.0.2",
+  "name": "az786-cli-simple-number-guessing-game",
+  "version": "1.0.3",
   "description": "This is CLI based number-guessing-game",
   "main": "index.js",
   "type": "module",

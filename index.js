@@ -9,12 +9,12 @@ const answer = await inquirer.prompt([
     {
         name: "userGuessedNumber",
         type: "number",
-        message: "Please guess a number between 1-6:",
+        message: "Enter your guess number(Number Limt from 1 to 6):",
     },
 ]);
-if (answer.usersGuessedNumber) {
-    console.log("Congratulation! you guessed right number");
+if (answer.userGuessedNumber === randomNumber) {
+    console.log("congratulation ! You guess a correct number.");
 }
 else {
-    console.log("You guessed wrong number");
+    console.log("Sorry, you guess a wrong number");
 }
